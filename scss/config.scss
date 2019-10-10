@@ -1,10 +1,12 @@
 $max-width: 1200px;
 $gutter: 20px;
 
-$color-1:#000000;
-$color-2:#fffcf2;
-$color-3:#ff5000;
-$color-4:#00b7ff;
+$font-header: "Oswald", Verdana, serif;
+
+$color-1: #000000;
+$color-2: #fffcf2;
+$color-3: #ff5000;
+$color-4: #00b7ff;
 
 @mixin row() {
   display: flex;
