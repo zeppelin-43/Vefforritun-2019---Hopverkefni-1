@@ -1,0 +1,96 @@
+.header {
+  background-color: $color-3;
+  font-family: $font-text;
+
+  &__title {
+    text-align: center;
+    font-family: $font-header;
+    font-size: 3.75rem;
+    font-weight: 600;
+  }
+
+  &__content {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 800px) {
+      flex-direction: row;
+      padding-bottom: $gutter * 0.7;
+    }
+  }
+
+  &__points {
+    @include columns(12);
+    padding-top: $gutter;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    @media (min-width: 800px) {
+      @include columns(6);
+      margin-left: 25%;
+    }
+  }
+
+  &__point {
+    padding-bottom: $gutter * 0.2;
+
+    margin-right: $gutter * 0.5;
+    margin-left: $gutter * 0.5;
+  }
+
+  &__cart {
+    @include columns(12);
+    display: flex;
+    justify-content: center;
+    color: $color-1;
+    display: flex;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    @media (min-width: 800px) {
+      @include columns(2);
+      margin-left: 8.3333%;
+      justify-content: flex-end;
+      padding-right: $gutter;
+    }
+
+    @media (min-width: 1200px) {
+      padding-right: 0;
+    }
+
+    &__text {
+      &:hover {
+        color: $color-2;
+      }
+
+      @media (min-width: 800px) {
+        margin: auto 0;
+      }
+    }
+  }
+
+  &__point--active &__link {
+    text-decoration: underline;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-1;
+
+    letter-spacing: 0.1rem;
+
+    &:hover {
+      color: $color-2;
+    }
+  }
+}
