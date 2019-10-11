@@ -21,6 +21,7 @@
     flex-direction: column;
     @media (min-width: 800px) {
       flex-direction: row;
+      padding-bottom: $gutter;
     }
   }
 
@@ -54,11 +55,13 @@
     justify-content: center;
     color: $color-1;
     display: flex;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
     @media (min-width: 800px) {
       @include columns(2);
       margin-left: 8.3333%;
       justify-content: flex-end;
-      padding-right: $gutter *1;
+      padding-right: $gutter;
     }
 
     &__text{
