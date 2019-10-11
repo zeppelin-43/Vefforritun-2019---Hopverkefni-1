@@ -1,0 +1,10 @@
+@import "config";
+
+.employees {
+
+  &__row {
+      flex-wrap: wrap;
+  }
+
+  &__col {
+}
