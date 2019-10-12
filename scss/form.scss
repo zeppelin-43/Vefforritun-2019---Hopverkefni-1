@@ -2,13 +2,12 @@
 
 .form {
   max-width: $max-width;
-  margin: 0 auto;
+  margin-bottom: $gutter;
 
   &__row {
     @include row;
 
     flex-wrap: wrap;
-    flex-direction: row;
   }
 
   &__col {
@@ -47,6 +46,8 @@
     border: 1px solid #000;
     border-radius: 3px;
 
+    height: $gutter*2;
+
   }
 
   &__field {
@@ -73,14 +74,13 @@
     justify-content: space-between;
   }
 
-  &__expiry &__label,
-  &__expiry &__select {
+  &__expiry &__label, &__expiry &__select {
     flex: 0;
   }
 
   &__send {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   
 }

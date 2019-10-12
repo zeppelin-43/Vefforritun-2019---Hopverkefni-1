@@ -1,0 +1,28 @@
+.button {
+    background-color: $color-4;
+
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0;
+
+    color: $color-1;
+    text-decoration-line: none;
+    font-family: $font-text;
+    text-align: center;
+
+    padding-top: $gutter * 0.5;
+    padding-bottom: $gutter * 0.5;
+    font-size: 1rem;
+    border-radius: 4px;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-3;
+      color: $color-2;
+    }
+  }
