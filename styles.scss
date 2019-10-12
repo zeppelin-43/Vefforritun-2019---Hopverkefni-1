@@ -20,7 +20,9 @@ html { /* stylelint-disable-line */
   font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 
-
+img {
+  max-width: 100%;
+}
 
 // TODO sækja allar sass skrár
 @import "scss/employees";

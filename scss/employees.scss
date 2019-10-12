@@ -2,9 +2,20 @@
 
 .employees {
 
-  &__row {
-      flex-wrap: wrap;
-  }
+    max-width: $max-width;
+    margin: 0 auto;
 
-  &__col {
+    &__row {
+        flex-wrap: wrap;
+
+        @include row;
+    }
+
+    &__col {
+        @include columns(12);
+
+        @media (min-width: 800px) {
+            @include columns(6);
+        }
+    }
 }
