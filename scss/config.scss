@@ -6,6 +6,11 @@ $color-2:#fffcf2;
 $color-3:#ff5000;
 $color-4:#00b7ff;
 
+$font-main: "Open Sans", helvetica, arial, sans-serif;
+$font-heading: "Oswald", Verdana, serif;
+
+$transition: 200ms ease-in-out;
+
 @mixin row() {
   display: flex;
 

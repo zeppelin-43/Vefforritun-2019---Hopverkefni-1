@@ -1,21 +1,27 @@
 @import "config";
 
 .employees {
+  max-width: $max-width;
+  margin: 0 auto;
 
-    max-width: $max-width;
-    margin: 0 auto;
-    background-color: #938;
+  &__row {
+    @include row;
+    margin-bottom: 2*$gutter;
+    flex-wrap: wrap;
+  }
 
-    &__row {
-        flex-wrap: wrap;
-        @include row;
+  &__col {
+    @include columns(12);
+
+    margin-bottom: 2*$gutter;
+
+    @media (min-width: 800px) {
+      @include columns(6);
     }
+  }
 
-    &__col {
-        @include columns(12);
-
-        @media (min-width: 800px) {
-            @include columns(6);
-        }
-    }
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
 }
