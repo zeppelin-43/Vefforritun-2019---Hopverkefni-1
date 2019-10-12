@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Námskeið</title>
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+
+<div class="course__form">
+    <form class="form" method="get" action="course.html">
+        <div class="form_row">
+            <div class="form__col">
+                <fieldset class="form__fieldset">
+
+                    <legend class="form__legend">
+                        Almennar upplýsingar
+                    </legend>
+
+                    <div class="form__field">
+                        <label class="form__label" for="name">Nafn:</label>
+                        <input class="form__input" type="text" id="name">
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label" for="address">Heimilisfang:</label>
+                        <input class="form__input" type="text" id="address">
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label" for="age">Aldur:</label>
+                        <input class="form__input" type="text" id="age">
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label" for="course">Námskeið:</label>
+                        <select class="form__select" id="course">
+                            <option>V0 - V1 námskeið</option>
+                            <option>V2 - V4 námskeið</option>
+                            <option>V5 - V7 námskeið</option>
+                            <option>Fjallaklifur námskeið</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="form__col">
+                <fieldset class="form__fieldset">
+                        <legend class="form__legend">Greiðsluupplýsingar</legend>
+
+                        <div class="form__field">
+                          <label class="form__label" for="cardnum">Kortanúmer:</label>
+                          <input class="form__input" type="text" id="cardnum">
+                        </div>
+      
+                        <div class="form__field">
+                          <label class="form__label" for="cardname">Korthafi:</label>
+                          <input class="form__input" type="text" id="cardname">
+                        </div>
+      
+                        <div class="form__field">
+                          <div class="form__label">Gildistími:</div>
+                          <div class="form__expiry">
+                            <label class="form__label" for="cardmon">Mán</label>
+                            <select id="cardmon" class="form__select">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                            </select>
+      
+                            <label class="form__label" for="cardyear">Ár</label>
+                            <select id="cardyear" class="form__select">
+                              <option>2019</option>
+                              <option>2020</option>
+                              <option>2021</option>
+                              <option>2022</option>
+                              <option>2023</option>
+                              <option>2024</option>
+                            </select>
+                          </div>
+                        </div>
+
+                </fieldset>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+</body>
+
+</html>
