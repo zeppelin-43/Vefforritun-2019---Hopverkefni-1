@@ -28,3 +28,7 @@ $transition: 200ms ease-in-out;
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
 }
+
+@mixin offset-left($cols: 0) {
+  margin-left: ($cols/12 * 100) * 1%;
+}

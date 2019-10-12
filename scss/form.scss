@@ -1,0 +1,86 @@
+@import "config";
+
+.form {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  &__row {
+    @include row;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__col {
+    @include columns(12);
+
+    margin-bottom: 2*$gutter;
+
+    @media (min-width: 800px) {
+      @include columns(5);
+      &:last-child {
+        @include offset-left(1);
+      }
+    }
+  }
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__legend {
+    font-family: $font-heading;
+    font-size: 2.25rem;
+    font-weight: 700;
+
+    margin-bottom: 0.5*$gutter;
+  }
+
+  &__input, &__select {
+    flex: 1;
+
+    padding: $gutter / 2;
+
+    font-family: $font-main;
+    font-size: 1.125rem;
+
+    border: 1px solid #000;
+    border-radius: 3px;
+
+  }
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: $gutter;
+
+    font-size: 1.125rem;
+    font-weight: 300;
+
+    @media (min-width: 800px) {
+        flex-wrap: nowrap;
+    }
+  }
+
+  &__label {
+    flex: 0 1 150px;
+  }
+
+  &__expiry {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__expiry &__label,
+  &__expiry &__select {
+    flex: 0;
+  }
+
+  &__send {
+      display: flex;
+      justify-content: center;
+  }
+  
+}

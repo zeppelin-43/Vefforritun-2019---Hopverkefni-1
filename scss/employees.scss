@@ -20,7 +20,7 @@
     }
   }
 
-  @media (max-width: $max-width - 1) {
+  @media (max-width: $max-width + $gutter) {
     padding-right: $gutter;
     padding-left: $gutter;
   }
