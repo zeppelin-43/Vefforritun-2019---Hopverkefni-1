@@ -1,0 +1,80 @@
+.index {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  &__row {
+    @include row();
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media (min-width: 800px) {
+      flex-direction: row;
+    }
+  }
+
+  &__col {
+    @include columns(12);
+
+    @media (min-width: 800px) {
+      @include columns(6);
+    }
+
+    &--first {
+      order: -1;
+      @media (min-width: 800px) {
+        order: initial;
+      }
+    }
+  }
+
+  &__card {
+    padding-left: $gutter;
+    margin-bottom: $gutter * 2;
+
+    @media (min-width: $max-width) {
+      padding-left: 0;
+    }
+  }
+
+  &__card--2-4 {
+    @media (min-width: 800px) {
+      padding-left: 0;
+    }
+  }
+
+  &__button__text {
+    background-color: $color-4;
+
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+
+    color: $color-1;
+    text-decoration-line: none;
+    font-family: $font-text;
+    text-align: center;
+
+    padding-top: $gutter * 0.5;
+    padding-bottom: $gutter * 0.5;
+    font-size: 1rem;
+    border-radius: 4px;
+
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      background-color: $color-3;
+      color: $color-2;
+    }
+  }
+
+  &__title {
+    font-family: $font-header;
+    margin-bottom: $gutter * 2;
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: $gutter * 2;
+  }
+}
