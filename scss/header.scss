@@ -1,6 +1,7 @@
 .header {
   background-color: $color-3;
   font-family: $font-text;
+  margin-bottom: $gutter * 2;
 
   &__title {
     text-align: center;
