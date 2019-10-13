@@ -7,7 +7,7 @@
     "sass-nomap": "node-sass styles.scss styles.css",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
-    "browser-sync": "browser-sync start --server --files index.html products.html styles.css",
+    "browser-sync": "browser-sync start --server --files index.html products.html cart.html staff.html styles.css",
     "dev": "npm-run-all --parallel sass-watch browser-sync"
   },
   "keywords": [],

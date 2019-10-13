@@ -1,0 +1,27 @@
+@import "config";
+
+
+.cart {
+    max-width: $max-width;
+    margin: 0 auto;
+    
+
+    &__row {
+        @include row; // Kemur úr config.scss
+        flex-wrap: wrap;
+        margin-bottom: 2*$gutter;
+        flex-direction: column;
+    }
+
+    &__col {
+       @include columns(12); // kemur úr config.scss
+       margin-bottom: 2*$gutter;
+       flex-direction: row;
+    }
+
+
+    &__product {
+        display: flex;
+        flex-direction: row;
+    }
+}
