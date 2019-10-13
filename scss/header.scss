@@ -8,6 +8,7 @@
     font-family: $font-header;
     font-size: 3.75rem;
     font-weight: 600;
+    margin-bottom: $gutter;
   }
 
   &__content {
@@ -20,30 +21,30 @@
   &__links {
     display: flex;
     flex-direction: column;
+    margin-bottom: $gutter;
     @media (min-width: 800px) {
       flex-direction: row;
-      padding-bottom: $gutter * 0.7;
     }
   }
 
   &__points {
     @include columns(12);
-    padding-top: $gutter;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     list-style: none;
 
+    margin-bottom: $gutter;
+
     @media (min-width: 800px) {
       @include columns(6);
       margin-left: 25%;
+      margin-bottom: initial;
     }
   }
 
   &__point {
-    padding-bottom: $gutter * 0.2;
-
     margin-right: $gutter * 0.5;
     margin-left: $gutter * 0.5;
   }
@@ -52,10 +53,7 @@
     @include columns(12);
     display: flex;
     justify-content: center;
-    color: $color-1;
-    display: flex;
-    padding-top: $gutter;
-    padding-bottom: $gutter;
+
     @media (min-width: 800px) {
       @include columns(2);
       margin-left: 8.3333%;
@@ -67,7 +65,14 @@
       padding-right: 0;
     }
 
+    &__link {
+      display: flex;
+      text-decoration: none;
+    }
+
     &__text {
+      color: $color-1;
+
       &:hover {
         color: $color-2;
       }
