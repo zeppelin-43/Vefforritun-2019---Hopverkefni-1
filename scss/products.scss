@@ -1,0 +1,23 @@
+@import "config";
+
+
+.products {
+    max-width: $max-width;
+    margin: 0 auto;
+    // flex-direction: row;
+
+    &__row {
+        @include row; // Kemur úr config.scss
+        flex-wrap: wrap;
+        margin-bottom: 2*$gutter;
+    }
+
+    &__col {
+       @include columns(12); // kemur úr config.scss
+       margin-bottom: 2*$gutter;
+    }
+}
+// .main {
+//     padding-right: 20px;
+//     padding-left: 20px;
+// }
