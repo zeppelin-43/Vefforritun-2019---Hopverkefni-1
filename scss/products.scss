@@ -13,7 +13,7 @@
     }
 
     &__col {
-       @include columns(12); // kemur úr config.scss
+       @include columns(4); // kemur úr config.scss
        margin-bottom: 2*$gutter;
     }
 }
