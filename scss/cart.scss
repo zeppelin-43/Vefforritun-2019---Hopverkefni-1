@@ -24,4 +24,28 @@
         display: flex;
         flex-direction: row;
     }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        border: solid black;
+    }
+
+    &__info {
+        align-self: flex-start;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    &__itemName {
+        justify-content: flex-start;
+    }
+
+    &__itemText {
+
+    }
 }
