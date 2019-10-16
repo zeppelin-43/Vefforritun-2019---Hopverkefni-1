@@ -10,7 +10,7 @@
             @include row;
             margin-bottom: $gutter;
             flex-wrap: wrap;
-          }
+        }
         
         &__col {
             @include columns(12);
