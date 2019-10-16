@@ -21,7 +21,7 @@
     &--first {
       order: -1;
       @media (min-width: 800px) {
-        order: initial;
+        order: 0;
       }
     }
   }
@@ -42,14 +42,14 @@
   }
 
   &__title {
-    font-family: $font-header;
     margin-bottom: $gutter * 2;
+    font-family: $font-header;
     font-size: 2.25rem;
     font-weight: 600;
   }
 
   &__text {
-    font-size: 1.5rem;
     margin-bottom: $gutter * 2;
+    font-size: 1.5rem;
   }
 }

@@ -1,27 +1,27 @@
 .header {
-  background-color: $color-3;
-  font-family: $font-text;
   margin-bottom: $gutter * 2;
+  font-family: $font-text;
+  background-color: $color-3;
 
   &__title {
-    text-align: center;
+    margin-bottom: $gutter;
     font-family: $font-header;
     font-size: 3.75rem;
     font-weight: 600;
-    margin-bottom: $gutter;
+    text-align: center;
   }
 
   &__content {
+    display: flex;
     max-width: $max-width;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
   }
 
   &__links {
     display: flex;
-    flex-direction: column;
     margin-bottom: $gutter;
+    flex-direction: column;
     @media (min-width: 800px) {
       flex-direction: row;
     }
@@ -33,14 +33,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    list-style: none;
-
     margin-bottom: $gutter;
+    list-style: none;
 
     @media (min-width: 800px) {
       @include columns(6);
+      margin-bottom: none;
       margin-left: 25%;
-      margin-bottom: initial;
     }
   }
 
@@ -56,9 +55,9 @@
 
     @media (min-width: 800px) {
       @include columns(2);
+      padding-right: $gutter;
       margin-left: 8.3333%;
       justify-content: flex-end;
-      padding-right: $gutter;
     }
 
     @media (min-width: 1200px) {
@@ -88,10 +87,10 @@
   }
 
   &__link {
-    text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
     color: $color-1;
+    text-decoration: none;
+    text-transform: uppercase;
 
     letter-spacing: 0.1rem;
 

@@ -1,32 +1,33 @@
 .button {
-    background-color: $color-4;
+  display: inline-block;
+  width: 100%;
+  max-width: 250px;
 
-    display: inline-block;
-    width: 100%;
-    max-width: 250px;
-    margin: 0;
+  padding-top: $gutter * 0.5;
+  padding-bottom: $gutter * 0.5;
 
-    color: $color-1;
-    text-decoration-line: none;
-    font-family: $font-text;
-    text-align: center;
+  margin: 0;
 
-    padding-top: $gutter * 0.5;
-    padding-bottom: $gutter * 0.5;
-    font-size: 1rem;
-    border-radius: 4px;
+  font-family: $font-text;
+  font-size: 1rem;
 
-    transition: $transition;
+  color: $color-1;
+  text-align: center;
+  text-decoration-line: none;
+  cursor: pointer;
+  background-color: $color-4;
 
-    cursor: pointer;
+  border-radius: 4px;
 
-    &:hover {
-      background-color: $color-3;
-      color: $color-2;
-    }
+  transition: $transition;
 
-    &__cart {
-      content: url("../img/cart.svg");
-      max-width: 250px;
-    }
+  &:hover {
+    color: $color-2;
+    background-color: $color-3;
   }
+
+  &__cart {
+    max-width: 250px;
+    content: url("../img/cart.svg");
+  }
+}
