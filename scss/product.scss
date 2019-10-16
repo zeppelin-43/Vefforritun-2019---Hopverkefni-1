@@ -22,9 +22,11 @@
 
     &__image {
         margin-bottom: $gutter;
+        align-self: center;
     }
       
     &__img {
+        // align-self: center;
         max-width: 100%;
     }
 
@@ -48,7 +50,9 @@
 
     &__form {
         display: flex;
+        width: 100%;
         border: solid black;
+        align-self: flex-end;
         }
 
     &__label {
