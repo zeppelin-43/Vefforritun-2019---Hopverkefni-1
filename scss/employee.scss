@@ -15,10 +15,10 @@
 
         position: absolute;
 
-        left: 0; right: 0; top: 0; bottom: 0;
+        top: 0; bottom: 0; left: 0; right: 0;
 
-        transform-style: preserve-3d;
         transition: transform $transition;
+        transform-style: preserve-3d;
 
         &__front {
             position: absolute;
@@ -39,11 +39,12 @@
         }
 
         &__title {
+            margin-bottom: 2*$gutter;
+
             font-family: $font-heading;
             font-size: 2.25rem;
             font-weight: 700;
 
-            margin-bottom: 2*$gutter;
         }
 
         &__content {
@@ -54,9 +55,9 @@
             justify-content: center;
             align-items: center;
 
-            text-align: center;
             font-size: 1.5rem;
             font-weight: 300;
+            text-align: center;
         }
     }
 
