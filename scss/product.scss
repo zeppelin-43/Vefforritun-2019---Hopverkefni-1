@@ -65,11 +65,10 @@
         font-size: 1rem;
         border: 1px solid #000;
         border-radius: 3px;
-
+        
         padding: 10px;
         // margin-right: $gutter;
 
-        
     
         
 
@@ -85,7 +84,7 @@
         
         display: inline-block;
         width: 100%;
-        max-width: 150px;
+        // max-width: 150px;
         margin: 0;
 
         color: $color-1;
@@ -102,7 +101,7 @@
 
         cursor: pointer;
 
-        margin-left: 10px;
+        margin-left:0.5*$gutter;
 
 
 
