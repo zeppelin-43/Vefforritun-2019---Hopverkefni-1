@@ -23,14 +23,14 @@
        margin-bottom: 2*$gutter;
     //    flex-direction: row;
        
-
-       @media (min-width: 800px) {
-        @include columns(6);
+    @media (min-width: 800px) {
+        @include columns(5);
       }
 
       @media (min-width: $max-width - 1) {
         @include columns(5);
       }
+
     }
 
 
