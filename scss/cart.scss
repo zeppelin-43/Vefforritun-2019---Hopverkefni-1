@@ -1,75 +1,70 @@
 @import "config";
 
-
 .cart {
-    max-width: $max-width;
-    margin: 0 auto;
+  max-width: $max-width;
+  margin: 0 auto;
 
-    @media (max-width: $max-width - 1) {
-        padding-right: $gutter;
-        padding-left: $gutter;
-      }
-      
-    &__row {
-        @include row; // Kemur úr config.scss
-        flex-wrap: wrap;
-        
-        margin-bottom: 2*$gutter;
-        // flex-direction: column;
-    }
+  @media (max-width: $max-width - 1) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
 
-    &__col {
-       @include columns(12); // kemur úr config.scss
-       margin-bottom: 2*$gutter;
-    //    flex-direction: row;
-       
+  &__row {
+    @include row; // Kemur úr config.scss
+    flex-wrap: wrap;
+    margin-bottom: 2 * $gutter;
+  }
+
+  &__col {
+    @include columns(12); // kemur úr config.scss
+    margin-bottom: 2 * $gutter;
+   
     @media (min-width: 800px) {
-        @include columns(8);
-      }
+      @include columns(8);
     }
+  }
 
-    &__col__img {
-        @include columns(12); // kemur úr config.scss
-        margin-bottom: 2*$gutter;
-     //    flex-direction: row;
-        
-     @media (min-width: 800px) {
-         @include columns(4);
-       }
+  &__col__img {
+    @include columns(12); // kemur úr config.scss
+    margin-bottom: 2 * $gutter;
 
- 
-     }
-
-
-    &__product {
-        display: flex;
-        flex-direction: row;
+    @media (min-width: 800px) {
+      @include columns(4);
     }
+  }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        // justify-content: flex-end;
-        height: 100%;
+  &__product {
+    display: flex;
+    flex-direction: row;
+  }
 
-        justify-content: space-between;
-    }
+  &__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    &__text {
-        // margin-bottom: 400px; //SKítamix :(
-    }
+  &__text {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
 
-    &__form {
-        display: flex;
-        flex-direction: column;
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
 
-        
-        // align-self: flex-start;
-    }
+  &__divBox { // Skítamix
+    display: flex;
+    flex-direction: row;
+  }
 
-    &__divBox {
-        display: flex;
-        flex-direction: row;
-    }
-
+  &__label {
+    margin-right: 0.5 * $gutter;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
 }
