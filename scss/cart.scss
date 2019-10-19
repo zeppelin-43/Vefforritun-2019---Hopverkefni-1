@@ -24,14 +24,21 @@
     //    flex-direction: row;
        
     @media (min-width: 800px) {
-        @include columns(5);
+        @include columns(8);
       }
-
-      @media (min-width: $max-width - 1) {
-        @include columns(5);
-      }
-
     }
+
+    &__col__img {
+        @include columns(12); // kemur úr config.scss
+        margin-bottom: 2*$gutter;
+     //    flex-direction: row;
+        
+     @media (min-width: 800px) {
+         @include columns(4);
+       }
+
+ 
+     }
 
 
     &__product {
@@ -56,12 +63,14 @@
     &__form {
         display: flex;
         flex-direction: column;
+
+        
         // align-self: flex-start;
     }
 
     &__divBox {
         display: flex;
-        // flex-direction: column;
+        flex-direction: row;
     }
 
 }
