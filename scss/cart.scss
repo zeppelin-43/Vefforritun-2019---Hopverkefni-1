@@ -4,24 +4,73 @@
 .cart {
     max-width: $max-width;
     margin: 0 auto;
-    
 
+    @media (max-width: $max-width - 1) {
+        padding-right: $gutter;
+        padding-left: $gutter;
+      }
+      
     &__row {
         @include row; // Kemur úr config.scss
         flex-wrap: wrap;
+        
         margin-bottom: 2*$gutter;
-        flex-direction: column;
+        // flex-direction: column;
     }
 
     &__col {
        @include columns(12); // kemur úr config.scss
        margin-bottom: 2*$gutter;
-       flex-direction: row;
+    //    flex-direction: row;
+       
+    @media (min-width: 800px) {
+        @include columns(8);
+      }
     }
+
+    &__col__img {
+        @include columns(12); // kemur úr config.scss
+        margin-bottom: 2*$gutter;
+     //    flex-direction: row;
+        
+     @media (min-width: 800px) {
+         @include columns(4);
+       }
+
+ 
+     }
 
 
     &__product {
         display: flex;
         flex-direction: row;
     }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        border: solid black;
+        height: 100%;
+
+        justify-content: space-between;
+    }
+
+    &__text {
+        // margin-bottom: 400px; //SKítamix :(
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        
+        // align-self: flex-start;
+    }
+
+    &__divBox {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
