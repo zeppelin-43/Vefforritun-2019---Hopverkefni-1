@@ -18,7 +18,7 @@
   &__col {
     @include columns(12); // kemur úr config.scss
     margin-bottom: 2 * $gutter;
-   
+
     @media (min-width: 800px) {
       @include columns(8);
     }
@@ -56,7 +56,8 @@
     flex-direction: column;
   }
 
-  &__divBox { // Skítamix
+  &__divBox {
+    // Skítamix
     display: flex;
     flex-direction: row;
   }
