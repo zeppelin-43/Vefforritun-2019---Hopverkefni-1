@@ -61,6 +61,8 @@
 
     &__label {
         margin-right: 0.5*$gutter;
+        flex-basis: 100px;
+        flex-shrink: 1;
     }
 
     &__quantity {
@@ -73,7 +75,7 @@
         padding: 10px;
         margin-right: $gutter;
 
-        flex: 2;
+        // flex: 2;
         
 
     }
@@ -87,7 +89,7 @@
         border: solid 1px black;
         
         display: inline-block;
-        width: 100%;
+        // width: 100%;
         // max-width: 150px;
         margin: 0;
 
@@ -108,7 +110,7 @@
 
         margin-left:0.5*$gutter;
 
-        flex: 1;
+        // flex: 1;
 
         &:hover {
             background-color: $color-4;
