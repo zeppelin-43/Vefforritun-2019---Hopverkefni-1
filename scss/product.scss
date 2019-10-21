@@ -22,6 +22,8 @@
   }
 
   &__name {
+    font-family: $font-heading;
+    font-size: 2.25rem;
     margin-bottom: 0.5 * $gutter;
   }
 
@@ -36,7 +38,8 @@
   }
 
   &__price {
-    margin-bottom: 2 * $gutter;
+    font-family: $font-heading;
+    margin-bottom: 1 * $gutter;
   }
 
   &__form {
@@ -54,8 +57,9 @@
 
   &__quantity {
     width: 100%;
+    height: 100%;
     padding: 10px;
-    margin-right: $gutter;
+    margin-right: 0.5*$gutter;
     font-size: 1rem;
     border: 1px solid #000;
     border-radius: 3px;
@@ -66,7 +70,7 @@
     padding: 0.5 * $gutter;
     padding-left: 2 * $gutter;
     margin: 0;
-    margin-left: 0.5 * $gutter;
+    margin-right: 0.5 * $gutter;
     font-family: $font-text;
     font-size: 1rem;
     color: $color-1;
@@ -85,6 +89,10 @@
     &:hover {
       background-color: $color-4;
       border-color: $color-4;
+    }
+
+    &:last-child{
+      margin-right: 0px;
     }
   }
 }
