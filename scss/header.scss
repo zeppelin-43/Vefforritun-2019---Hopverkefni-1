@@ -38,7 +38,7 @@
 
     @media (min-width: 800px) {
       @include columns(6);
-      margin-bottom: none;
+      margin-bottom: 0;
       margin-left: 25%;
     }
   }
@@ -71,7 +71,7 @@
 
     &__text {
       color: $color-1;
-
+      transition: $transition;
       &:hover {
         color: $color-2;
       }
@@ -94,6 +94,7 @@
 
     letter-spacing: 0.1rem;
 
+    transition: $transition;
     &:hover {
       color: $color-2;
     }
