@@ -12,7 +12,7 @@
   &__row {
     @include row; // Kemur úr config.scss
     flex-wrap: wrap;
-    margin-bottom: 2 * $gutter;
+    // margin-bottom: 2 * $gutter;
   }
 
   &__col {
