@@ -1,3 +1,31 @@
+# Leiðbeiningar til að keyra verkefnið
+Til að keyra verkefnið þarf að framkvæma eftirfarandi skipanir í möppu verkefnisins:
+```bash
+npm install
+npm run dev
+```
+
+## Uppsetning
+Skjöl verkefnisins eru skipt niður eftirfarandi hátt:
+* Pages inniheldur HTML skjöl verkefnisins fyrir utan forsíðu (index.html)
+* SCSS inniheldur öll scss skjöl fyrir utan styles.scss.
+
+## CSS skipulag
+SCSS skjölunum er skipt niður í ákveðna parta
+* Header of Footer (header.scss og footer.scss)
+* Form (form.scss)
+* Button (button.scss)
+* Stakar síður (index, products.scss, products.scss, employees.scss, employee.scss, cart.scss, course.scss)
+* Config (inniheldur ýmsar breytur sem önnur skjöl nýta)
+
+Header, Footer, Form og Button eru eins í flestum HTML skjölunum svo scss fyrir það er geymt í stökum skjölum. cart.html notar að hluta til kóða frá product.scss ásamt því að hafa sér scss skrá, cart.scss. products.scss og employes.sccs geyma kóða fyrir grind 
+
+## Höfundar
+* Daníel Þór Guðmundsson dthg7
+* Agnar Pétursson agp11
+* Anna Kristín Hálfdánardóttir akh30
+
+# Verkefnalýsing
 
 # Hópverkefni 1
 
