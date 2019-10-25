@@ -10,26 +10,26 @@ Skjölum verkefnisins er skipt niður eftirfarandi hátt:
 * Pages inniheldur HTML skjöl verkefnisins fyrir utan forsíðu (index.html)
 * SCSS inniheldur öll scss skjöl fyrir utan styles.scss.
 ## HTML skipulag
-HTML skjölunum er skipt upp í header, main og footer. Síðurnar eru sett upp með fyrri heimaverkefni sem fyrirmyndir (s.s. cards og card).
+HTML skjölum er skipt upp í header, main og footer. Síðurnar eru settar upp með fyrri heimaverkefni sem fyrirmyndir (s.s. cards og card).
 
 Síður hafa allar sama haus og sama fót. Vöruflokkar í fæti vísa á pages/products.html. Námskeið í fæti vísa á pages/course.html
 
-Enginn virkni eru útfærð fyrir hvorki takka né form.
+Engin virkni er útfærð fyrir takka né form.
 ## CSS skipulag
-CSS verkefnisins eru útfært með SCSS og síðan þýtt yfir í CSS kóða. SCSS skjölunum er skipt niður í ákveðna parta eftir síðum og eigindum:
+CSS skjöl verkefnisins eru útfærð með SCSS og síðan þýdd yfir í CSS kóða. SCSS skjölum er skipt niður í ákveðna parta eftir síðum og eigindum:
 * Header of Footer (header.scss og footer.scss)
 * Form (form.scss)
 * Button (button.scss)
 * Stakar síður (index, products.scss, products.scss, employees.scss, employee.scss, cart.scss, course.scss)
 * Config (inniheldur ýmsar breytur sem önnur skjöl nýta)
 
-Header, Footer, Form og Button eru eins í flestum HTML skjölunum svo scss fyrir það er geymt í stökum skjölum. cart.html notar að hluta til kóða frá product.scss ásamt því að hafa sér scss skrá, cart.scss. products.scss og employes.sccs geyma kóða fyrir grind utan um products.html og employees.html.
+Header, Footer, Form og Button eru eins í flestum HTML skjölnuum, síðan er scss fyrir það er geymt í stökum skjölum. cart.html notar að hluta til kóða frá product.scss ásamt því að hafa sér scss skrá, cart.scss. products.scss og employes.sccs geyma kóða fyrir grind utan um products.html og employees.html.
 
 
 ## Höfundar
-* Daníel Þór Guðmundsson dthg7
-* Agnar Pétursson agp11
-* Anna Kristín Hálfdánardóttir akh30
+* Daníel Þór Guðmundsson, dthg7@hi.is
+* Agnar Pétursson, agp11@hi.is
+* Anna Kristín Hálfdánardóttir, akh30@hi.is
 
 # Verkefnalýsing
 
