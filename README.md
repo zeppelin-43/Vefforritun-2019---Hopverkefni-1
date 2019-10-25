@@ -1,5 +1,5 @@
 # Leiðbeiningar til að keyra verkefnið
-Til að keyra verkefnið þarf að framkvæma eftirfarandi skipanir í möppu verkefnisins:
+Til að keyra verkefnið þarf að framkvæma eftirfarandi skipanir af skipanalínu í möppu verkefnisins:
 ```bash
 npm install
 npm run dev
