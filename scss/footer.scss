@@ -56,6 +56,8 @@
     color: $color-2;
     text-decoration: none;
 
+    transition: $transition;
+
     &:hover {
       color: $color-1;
     }
