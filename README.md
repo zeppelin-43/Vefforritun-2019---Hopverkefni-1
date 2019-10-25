@@ -6,7 +6,7 @@ npm run dev
 ```
 
 ## Uppsetning
-Skjöl verkefnisins eru skipt niður eftirfarandi hátt:
+Skjölum verkefnisins er skipt niður eftirfarandi hátt:
 * Pages inniheldur HTML skjöl verkefnisins fyrir utan forsíðu (index.html)
 * SCSS inniheldur öll scss skjöl fyrir utan styles.scss.
 ## HTML skipulag
