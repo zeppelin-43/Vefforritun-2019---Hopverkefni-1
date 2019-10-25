@@ -9,16 +9,22 @@ npm run dev
 Skjöl verkefnisins eru skipt niður eftirfarandi hátt:
 * Pages inniheldur HTML skjöl verkefnisins fyrir utan forsíðu (index.html)
 * SCSS inniheldur öll scss skjöl fyrir utan styles.scss.
+## HTML skipulag
+HTML skjölunum er skipt upp í header, main og footer. Síðurnar eru sett upp með fyrri heimaverkefni sem fyrirmyndir (s.s. cards og card).
 
+Síður hafa allar sama haus og sama fót. Vöruflokkar í fæti vísa á pages/products.html. Námskeið í fæti vísa á pages/course.html
+
+Enginn virkni eru útfærð fyrir hvorki takka né form.
 ## CSS skipulag
-SCSS skjölunum er skipt niður í ákveðna parta
+CSS verkefnisins eru útfært með SCSS og síðan þýtt yfir í CSS kóða. SCSS skjölunum er skipt niður í ákveðna parta eftir síðum og eigindum:
 * Header of Footer (header.scss og footer.scss)
 * Form (form.scss)
 * Button (button.scss)
 * Stakar síður (index, products.scss, products.scss, employees.scss, employee.scss, cart.scss, course.scss)
 * Config (inniheldur ýmsar breytur sem önnur skjöl nýta)
 
-Header, Footer, Form og Button eru eins í flestum HTML skjölunum svo scss fyrir það er geymt í stökum skjölum. cart.html notar að hluta til kóða frá product.scss ásamt því að hafa sér scss skrá, cart.scss. products.scss og employes.sccs geyma kóða fyrir grind 
+Header, Footer, Form og Button eru eins í flestum HTML skjölunum svo scss fyrir það er geymt í stökum skjölum. cart.html notar að hluta til kóða frá product.scss ásamt því að hafa sér scss skrá, cart.scss. products.scss og employes.sccs geyma kóða fyrir grind utan um products.html og employees.html.
+
 
 ## Höfundar
 * Daníel Þór Guðmundsson dthg7
