@@ -31,7 +31,8 @@ Header, Footer, Form og Button eru eins í flestum HTML skjölunum svo scss fyri
 * Agnar Pétursson agp11
 * Anna Kristín Hálfdánardóttir akh30
 
-# Verkefnalýsing
+
+# Verkefnalýsing sem gefin var
 
 # Hópverkefni 1
 
